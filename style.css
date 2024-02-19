@@ -1,0 +1,126 @@
+@layer reset, layout;
+
+@layer layout {
+	@layer general {
+		html {
+			font-family: sans-serif;
+		}
+	
+	
+		a {
+			color: #0000aa;
+			text-decoration: none;
+			&:hover {
+				color: blue;
+			}
+		}
+		footer {
+			text-align: center;
+			font-style: italic;
+			margin: 4em 0;
+		}
+	}
+
+	@layer code {
+		script[visible],
+		style[visible],
+		pre {
+			display: block;
+			white-space: pre;
+			border: 1px solid #dedede;
+			padding: 1em;
+			background: #eee;
+			font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+				Liberation Mono, monospace;
+			overflow-x: auto;
+			tab-size: 2;
+			color: #1a1a1a;
+			line-height: 1.6;
+            border-radius: 10px;
+		}
+
+		code:not(pre code), /* output:not(code:has(output) output) */ {
+			background: #f7f7f7;
+			border: 1px solid rgb(0 0 0 / 0.2);
+			padding: 0.1rem 0.3rem;
+			margin: 0.1rem 0;
+			border-radius: 0.2rem;
+			display: inline-block;
+		}
+	}
+
+	@layer warning {
+		.warning {
+			display: none;
+			box-sizing: border-box;
+			padding: 1em;
+			margin: 1em 0;
+			border: 1px solid #ccc;
+			background: rgba(255 255 205 / 0.8);
+		}
+
+		.warning > :first-child {
+			margin-top: 0;
+		}
+
+		.warning > :last-child {
+			margin-bottom: 0;
+		}
+
+		.warning a {
+			color: blue;
+		}
+		.warning--info {
+			border: 1px solid #123456;
+			background: rgb(205 230 255 / 0.8);
+		}
+		.warning--alarm {
+			border: 1px solid red;
+			background: #ff000010;
+		}
+	}
+}
+
+@layer reset {
+	* {
+		box-sizing: border-box;
+	}
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+.contenar{
+    margin: 20px;
+}
+
+
+input#text {
+    border: none;
+    border-radius: 58px;
+    outline: none;
+    border: 1px solid #dedede;
+    padding: 0.8em;
+    background: #eee;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+
+
+
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
