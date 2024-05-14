@@ -21,7 +21,7 @@
             <p>A project to convert time from hours to minutes</p>
         </div>
 
-        <p>What if I told you can syntax highlight code snippets without needing </p>
+        <p>Converts hours to seconds </p>
 
 
 
@@ -49,6 +49,197 @@ cout <<  seconds << endl;
             </div>
 
         </div>
+
+
+
+<!--  -->
+
+<p>It counts the numbers from one to 100 and displays the odd numbers </p>
+
+
+
+
+
+
+<div class="code">
+    <pre>
+#include <iostream>
+using namespace std;
+int main () {
+for (int i = 0 ; i <= 100 ; i ++ )
+if (i % 3 == 0)
+cout <<  i << endl;
+return 0 ;}</pre>
+
+    <div class="flex">
+
+        <input type="text" id="text">
+        <span id="span"></span>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<!--  -->
+
+
+<p>Students appreciation</p>
+
+
+
+
+
+
+<div class="code">
+    <pre>
+#include <iostream>
+using namespace std;
+int main()
+{
+float degree ;
+cout << "Enter your degree: ";
+cin >> degree;
+if (degree >= 90)
+cout << "A";
+else if (degree >= 80)
+cout << "B";
+else if (degree >= 70)
+cout << "C";
+else if (degree >= 60)
+cout << "D";
+else
+cout << "F";
+return 0;
+}</pre>
+
+    <div class="flex">
+
+        <input type="text" id="text">
+        <span id="span"></span>
+
+
+
+    </div>
+
+</div>
+
+
+<!--  -->
+
+
+
+<p>Calculate the factorial of numbers</p>
+
+
+
+
+
+
+<div class="code">
+    <pre>
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cout << "Enter your number: ";
+cin >> n;
+int factorial = 1;
+for (int i = 1; i <= n; i++) {
+factorial *= i;
+}
+cout << "factorial number << n << is: <<< factorial << endl;
+return 0;
+}</pre>
+
+
+
+</div>
+
+<div class="flex">
+
+    <input type="text" id="text">
+    <span id="span"></span>
+
+
+
+</div>
+
+<!--  -->
+
+
+<p>We take the reading of five students and show the GPA</p>
+
+
+
+
+
+
+<div class="code">
+    <pre>
+        #include <iostream>
+
+#include <vector>
+using namespace std;
+struct Student {
+string name;
+int id;
+float gpa;
+};
+Student findMaxGPA (vector<Student> students) {
+Student maxStudent = students[0];
+for (int i = 1; i < students.size(); i++) {
+if (students[i].gpa > maxStudent.gpa) {
+maxStudent = students[i];
+}
+return maxStudent;
+}
+int main() {
+vector<Student> students;
+for (int i = 0; i < 5; i++) {
+Student student;
+cout << "Enter student name: ;
+cin >> student.name;
+cout << "Enter student ID: ";
+cin >> student.id;
+cout << "Enter student GPA: ";
+cin >> student.gpa;
+students.push_back(student);
+}
+Student maxStudent = findMaxGPA (students);
+cout << "The student with the highest GPA is: << endl;
+cout << "Name:
+<< maxStudent.name << endl;
+cout << "ID: << maxStudent.id << endl;
+cout << "GPA: << maxStudent.gpa << endl;
+return 0;
+            }</pre>
+
+    <div class="flex">
+
+        <input type="text" id="text">
+        <span id="span"></span>
+
+
+
+    </div>
+
+</div>
+
+
+<!--  -->
+
+
+
+
+
+<!--  -->
+
 
 
 
