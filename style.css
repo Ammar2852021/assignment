@@ -109,13 +109,22 @@ input#text {
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
-
-
-
-
-
 .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	width: 15%;
+	background: #eee;
+	border-radius: 30px;
+	padding: 20px;
+	}
+
+
+ 
+@media screen and (max-width:992px) {
+	.flex{
+		width: 40%;
+		background: #eee;
+		border-radius: 30px;
+		padding: 20px;
+		}
 }
+
+
