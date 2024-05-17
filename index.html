@@ -15,29 +15,65 @@
     <div class="contenar">
 
 
-        <h1>The first assignment for the program <span style="color: orangered;">C++</span></h1>
+        <h1>The  assignment for the program <span style="color: orangered;">C++</span></h1>
 
         <div class="warning">
             <p>A project to convert time from hours to minutes</p>
         </div>
 
         <p>Converts hours to seconds </p>
-
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            .code-block {
+                background-color: #f7f7f7;
+                padding: 20px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                overflow-x: auto;
+            }
+            .keyword {
+                color: #0074D9;
+            }
+            .iostream {
+                color: #FF4136;
+            }
+            .namespace {
+                color: #2ECC40;
+            }
+            .variable {
+                color: #FF851B;
+            }
+            .output {
+                color: #0074D9;
+            }
+        </style>
 
 
 
 
 
         <div class="code">
-            <pre>
-#include <iostream>
-using namespace std;
-int main () {
-int num;
-cin >> num ;
-int seconds = num * 60 * 60;
-cout <<  seconds << endl;
-    return 0 ;}</pre>
+            <div class="code-block">
+                <span class="keyword">#include</span> <span class="iostream">&lt;iostream&gt;</span><br>
+                <span class="namespace">using namespace std;</span><br><br>
+                
+                <span class="keyword">int</span> <span class="variable">main</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">num</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"Enter the number of hours: "</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> &gt;&gt; <span class="variable">num</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">seconds</span> = <span class="variable">num</span> * 60 * 60;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"Equivalent seconds: "</span> << <span class="variable">seconds</span> << <span class="iostream">endl</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;<br>
+                }<br>
+            </div>
 
             <div class="flex">
 
@@ -59,14 +95,20 @@ cout <<  seconds << endl;
 
 
         <div class="code">
-            <pre>
-#include <iostream>
-using namespace std;
-int main () {
-for (int i = 0 ; i <= 100 ; i ++ )
-if (i % 3 == 0)
-cout <<  i << endl;
-return 0 ;}</pre>
+
+            <div class="code-block">
+                <span class="keyword">#include</span> <span class="iostream">&lt;iostream&gt;</span><br>
+                <span class="namespace">using namespace std;</span><br><br>
+                
+                <span class="keyword">int</span> <span class="variable">main</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i <= 100; i++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (i % 3 == 0) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << i << <span class="iostream">" is divisible by 3"</span> << <span class="iostream">endl</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;<br>
+                }<br>
+            </div>
 
             <div class="flex">
 
@@ -93,26 +135,30 @@ return 0 ;}</pre>
 
 
         <div class="code">
-            <pre>
-#include <iostream>
-using namespace std;
-int main()
-{
-float degree ;
-cout << "Enter your degree: ";
-cin >> degree;
-if (degree >= 90)
-cout << "A";
-else if (degree >= 80)
-cout << "B";
-else if (degree >= 70)
-cout << "C";
-else if (degree >= 60)
-cout << "D";
-else
-cout << "F";
-return 0;}</pre>
-
+      
+            <div class="code-block">
+                <span class="keyword">#include</span> <span class="iostream">&lt;iostream&gt;</span><br>
+                <span class="namespace">using namespace std;</span><br><br>
+                
+                <span class="keyword">int</span> <span class="variable">main</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">float</span> <span class="variable">degree</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"Enter your degree: "</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> >> <span class="variable">degree</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="variable">degree</span> >= 90)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"A"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else if</span> (<span class="variable">degree</span> >= 80)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"B"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else if</span> (<span class="variable">degree</span> >= 70)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"C"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else if</span> (<span class="variable">degree</span> >= 60)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"D"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"F"</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;<br>
+                }<br>
+            </div>
             <div class="flex">
 
 
@@ -133,20 +179,26 @@ return 0;}</pre>
 
 
         <div class="code">
-            <pre>
-#include <iostream>
-using namespace std;
-int main() {
-int n;
-cout << "Enter your number: ";
-cin >> n;
-int factorial = 1;
-for (int i = 1; i <= n; i++) {
-factorial *= i;
-}
-cout << "factorial number << n << is: <<< factorial << endl;
-return 0;}</pre>
 
+            <div class="code-block">
+                <span class="keyword">#include</span> <span class="iostream">&lt;iostream&gt;</span><br>
+                <span class="namespace">using namespace std;</span><br><br>
+                
+                <span class="keyword">int</span> <span class="variable">main</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">n</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"Enter your number: "</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> >> <span class="variable">n</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">factorial</span> = 1;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> i = 1; i <= <span class="variable">n</span>; i++) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">factorial</span> *= i;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> << <span class="iostream">"Factorial of "</span> << <span class="variable">n</span> << <span class="iostream">" is: "</span> << <span class="variable">factorial</span> << <span class="iostream">endl</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;<br>
+                }<br>
+            </div>
 
 
         </div>
@@ -168,44 +220,49 @@ return 0;}</pre>
 
 
         <div class="code">
-            <pre>
-        #include <iostream>
-
-#include <vector>
-using namespace std;
-struct Student {
-string name;
-int id;
-float gpa;
-};
-Student findMaxGPA (vector<Student> students) {
-Student maxStudent = students[0];
-for (int i = 1; i < students.size(); i++) {
-if (students[i].gpa > maxStudent.gpa) {
-maxStudent = students[i];
-}
-return maxStudent;
-}
-int main() {
-vector<Student> students;
-for (int i = 0; i < 5; i++) {
-Student student;
-cout << "Enter student name: ;
-cin >> student.name;
-cout << "Enter student ID: ";
-cin >> student.id;
-cout << "Enter student GPA: ";
-cin >> student.gpa;
-students.push_back(student);
-}
-Student maxStudent = findMaxGPA (students);
-cout << "The student with the highest GPA is: << endl;
-cout << "Name:
-<< maxStudent.name << endl;
-cout << "ID: << maxStudent.id << endl;
-cout << "GPA: << maxStudent.gpa << endl;
-return 0;}</pre>
-
+            <div class="code-block">
+                <span class="iostream">#include &lt;iostream&gt;</span><br>
+                <span class="iostream">#include &lt;vector&gt;</span><br>
+                <span class="namespace">using namespace std;</span><br><br>
+                
+                <span class="keyword">struct</span> <span class="variable">Student</span> {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">string</span> <span class="variable">name</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="variable">id</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">float</span> <span class="variable">gpa</span>;<br>
+                };<br><br>
+                
+                <span class="variable">Student</span> <span class="variable">findMaxGPA</span>(<span class="keyword">vector</span>&lt;<span class="variable">Student</span>>& <span class="variable">students</span>) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">Student</span> <span class="variable">maxStudent</span> = <span class="variable">students</span>[0];<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> <span class="variable">i</span> = 1; <span class="variable">i</span> &lt; <span class="variable">students</span>.size(); <span class="variable">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="variable">students</span>[<span class="variable">i</span>].gpa &gt; <span class="variable">maxStudent</span>.gpa) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">maxStudent</span> = <span class="variable">students</span>[<span class="variable">i</span>];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">maxStudent</span>;<br>
+                }<br><br>
+                
+                <span class="keyword">int</span> <span class="variable">main</span>() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">vector</span>&lt;<span class="variable">Student</span>&gt; <span class="variable">students</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> <span class="variable">i</span> = 0; <span class="variable">i</span> &lt; 5; <span class="variable">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">Student</span> <span class="variable">student</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"Enter student name: "</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> &gt;&gt; <span class="variable">student</span>.name;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"Enter student ID: "</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> &gt;&gt; <span class="variable">student</span>.id;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"Enter student GPA: "</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="iostream">cin</span> &gt;&gt; <span class="variable">student</span>.gpa;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">students</span>.push_back(<span class="variable">student</span>);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">Student</span> <span class="variable">maxStudent</span> = <span class="variable">findMaxGPA</span>(<span class="variable">students</span>);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"The student with the highest GPA is: "</span> &lt;&lt; <span class="iostream">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"Name: "</span> &lt;&lt; <span class="variable">maxStudent</span>.name &lt;&lt; <span class="iostream">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"ID: "</span> &lt;&lt; <span class="variable">maxStudent</span>.id &lt;&lt; <span class="iostream">endl</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="output">cout</span> &lt;&lt; <span class="iostream">"GPA: "</span> &lt;&lt; <span class="variable">maxStudent</span>.gpa &lt;&lt; <span class="iostream">endl</span>;<br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> 0;<br>
+                }<br>
+            </div>
             <div class="flex">
 
 
